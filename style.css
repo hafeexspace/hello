@@ -143,7 +143,7 @@
   font-size: 40px;
   width: 95%;
   margin: 0 auto;
-  height: 100%; 
+  min-height: 100vh; 
 }
 
 
@@ -280,8 +280,8 @@
   width: 100%;
   height: 100%;
   background-image: url(/images/piclumen-1731685918250.png);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; 
+  background-repeat: no-repeat; 
   background-size: cover; 
 }
 
@@ -293,62 +293,134 @@
 }
 
 
+/* media queries */
+
+@media (max-width: 1600px) {
+
+  .digitalize{
+    font-size: 18rem;
+  }
+
+  .ideas{
+    font-size: 16rem;
+  }
+  
+  .shortDesc{
+    font-size: 1.4rem;
+  
+  }
+
+}
+
 
 @media (max-width: 1024px){
   .section:nth-child(1){
     width: 90%;
 }
+    .topSide{
+    display: flex;
+    flex-direction: column;
+    height: 43%;
+    }
 
-.topSide{
- display: flex;
- flex-direction: column;
- height: 43%;
-}
+      .bottomSide{
+        height: 57%;
+      }
 
-.bottomSide{
-  height: 57%;
-}
+            .digitalize{
+              font-size: 14rem;
+            }
 
-.digitalize{
-  font-size: 14rem;
-}
+                .ideas{
+                  font-size: 12rem;
+                }
 
-.ideas{
-  font-size: 12rem;
-}
+                  .shortDesc{
+                    font-size: 1.4rem;
 
-.shortDesc{
-  font-size: 1.4rem;
+                  }
 
-}
+                 .threeBox{
+                          flex-wrap: wrap;
+                          justify-content: center;
+                        }
 
-.bottomSide{
+                        .box{
+                          font-size: .7rem;
+                        }
 
-}
+                .first{
+                  width: 45%;
+                }
 
-.threeBox{
-  flex-wrap: wrap;
-  justify-content: center;
-}
+                .second{
+                  width: 45%;
+                }
 
-.box{
-  font-size: .7rem;
-}
-
-.first{
-  width: 45%;
-}
-
-.second{
-  width: 45%;
-}
-
-.straightLine{
-  width: 100%;
-}
+                .straightLine{
+                  width: 100%;
+                }
 
 }
 
+                    @media (max-width: 800px){
+                      .section:nth-child(1){
+                        height: 120vh;
 
+                    }
+                    .topSide{
+                      height: 45%;
+                    }
 
+                    .bottomSide{
+                      height: 55%;
+                    }
+                      .digitalize{
+                        font-size: 8.2rem;
+                      }
+                      
+                      .ideas{
+                        font-size: 7rem;
+                      }
+                      
+                      .shortDesc{
+                        font-size: 1.4rem;
+                      
+                      }
+
+                    }
+
+                      @media (max-width: 500px){
+
+                        body{
+                          overflow: scroll;
+                        }
+
+                      .topSide{
+                        height: 30%;
+                      }
+
+                      .bottomSide{
+                        height: 70%;
+                      }
+                        .digitalize{
+                          font-size: 6rem;
+                        }
+                        
+                        .ideas{
+                          font-size: 5rem;
+                        }
+                        
+                        .shortDesc{
+                          font-size: 1rem;
+                        
+                        }
+
+                        .box{
+                          font-size: .5rem;
+                        }
+
+}
+
+/* end of first section media queries */
 
