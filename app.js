@@ -11,7 +11,7 @@ const menu_items = document.querySelectorAll('nav .mainMenu li a');
 openMenu.addEventListener('click',function (){
  
     mainMenu.style.top = '0';
-    mainMenu.style.transition = 'top 1.5s ease 0s';
+    mainMenu.style.transition = 'top 0.5s ease 0s';
 });
 
 closeMenu.addEventListener('click',close);
